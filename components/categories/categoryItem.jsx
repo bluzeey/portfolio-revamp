@@ -66,7 +66,7 @@ const CategoryItem = () => {
                     <Link href={`/item/${itemLink}`}>
                       <a>
                         <Tippy content={<span>creator: {owner.name}</span>}>
-                          <img
+                          <Image
                             src={owner.image}
                             alt="owner"
                             layout="fill"
