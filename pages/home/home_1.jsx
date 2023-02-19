@@ -4,10 +4,10 @@ import {
 	Browse_category,
 } from '../../components/component';
 import TrustedPartner from "../../components/dao/TrustedPartner";
-import Testimonial from "../../components/testimonial/testimonial";
-import CoverflowCarousel from '../../components/carousel/coverflowCarousel';
+import Testimonial from "../../components/testimonial/Testimonial";
+import CoverflowCarousel from '../../components/carousel/CoverflowCarousel';
 import Meta from '../../components/Meta';
-import Cta from "../../components/cta/cta";
+import Cta from "../../components/cta/Cta";
 
 const Home_1 = () => {
 	return (
