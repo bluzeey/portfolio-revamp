@@ -68,24 +68,15 @@ const CoverflowCarousel = () => {
                           <Image
                             src={img}
                             alt={title}
-                            className="swiper-lazy h-[430px] w-full object-cover"
-                            height="430"
+                            className="swiper-lazy h-[400px] w-full object-cover"
+                            height="300"
                             width="379"
                           />
                         </a>
                       </Link>
                     </figure>
-                    <div className="p-6">
+                    <div className="p-8 mt-20">
                       <div className="flex">
-                        <Link href="/user/avatar_6">
-                          <a className="shrink-0">
-                            <img
-                              src={authorImage}
-                              alt="avatar"
-                              className="mr-4 h-10 w-10 rounded-full"
-                            />
-                          </a>
-                        </Link>
                         <div>
                           <Link href={"/item/" + itemLink}>
                             <a className="block">
