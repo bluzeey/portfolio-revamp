@@ -5,7 +5,7 @@ const Cta = () => {
 	return (
 		<div>
 			{/* <!-- CTA --> */}
-			<div className="relative -mt-48 z-10 dark:bg-jacarta-900">
+			<div className="relative z-10 dark:bg-jacarta-900">
 				<div className="container">
 					<div className="relative overflow-hidden rounded-2.5xl px-16 pt-16 pb-8 shadow-md lg:px-24">
 						<picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">

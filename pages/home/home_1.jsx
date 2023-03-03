@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-	Hero,
-	Bids
-} from '../../components/component';
+import {Hero} from '../../components/component';
 import Meta from '../../components/Meta';
 import Testimonial from "../../components/testimonial/Testimonial";
 import CoverflowCarousel from '../../components/carousel/coverflowCarousel';
@@ -13,7 +10,7 @@ import Cta from "../../components/cta/cta";
 const Home_1 = () => {
 	return (
 		<main>
-			<Meta title="Home 1 || Xhibiter | NFT Marketplace Next.js Template" />
+			<Meta title="Sahil Maheshwari | Portfolio" />
 			<Hero />
 			<Process/>
 			<TrustedPartner />

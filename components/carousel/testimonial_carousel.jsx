@@ -46,63 +46,12 @@ const Testimonial_carousel = () => {
                   alt={title}
                   className="testimonial-img w-28 self-start rounded-2.5xl lg:w-auto"
                 />
+                <div>
+                  
+                </div>
                 <div className="-ml-14 -mt-4 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-[5px] border-white bg-accent dark:border-jacarta-700 md:mb-0 md:w-16">
                   <img src="/images/testimonials/quote.png" alt="quote" />
                 </div>
-
-                <div className="mb-4 md:mb-0">
-                  <div className="-ml-1 mb-3 flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      className="h-5 w-5 fill-orange"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z" />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      className="h-5 w-5 fill-orange"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z" />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      className="h-5 w-5 fill-orange"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z" />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      className="h-5 w-5 fill-orange"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z" />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      className="h-5 w-5 fill-orange"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z" />
-                    </svg>
-                  </div>
                   <p className="testimonial-desc text-md leading-normal text-jacarta-700 dark:text-white">
                     {desc}
                   </p>
@@ -113,7 +62,6 @@ const Testimonial_carousel = () => {
                     {title}
                   </span>
                 </div>
-              </div>
             </SwiperSlide>
           );
         })}

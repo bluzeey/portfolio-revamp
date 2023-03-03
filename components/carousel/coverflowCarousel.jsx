@@ -50,7 +50,7 @@ const CoverflowCarousel = () => {
           className="swiper coverflow-slider !py-5"
         >
           {coverflow_data.map((item) => {
-            const { img, id, authorImage, authorName, title } = item;
+            const { img, id, tags , description,  title } = item;
             const itemLink = img
               .split("/")
               .slice(-1)
@@ -75,7 +75,7 @@ const CoverflowCarousel = () => {
                         </a>
                       </Link>
                     </figure>
-                    <div className="p-8 mt-20">
+                    <div className="p-8 pt-4">
                       <div className="flex">
                         <div>
                           <Link href={"/item/" + itemLink}>
@@ -85,9 +85,10 @@ const CoverflowCarousel = () => {
                               </span>
                             </a>
                           </Link>
-                          <Link href="/user/avatar_6">
-                            <a className="text-2xs text-accent">{authorName}</a>
-                          </Link>
+                          <div className="flex mt-2">
+                            {tags && tags.map(tag=><p className="text-2xs text-accent px-5 py-1 bg-accent-light rounded-full mr-2">{tag}</p>)}
+                          </div>
+                          <p className="text-sm leading-5 text-jacarta-700 hover:text-accent dark:text-white mt-2">{description && description}</p>
                         </div>
                       </div>
                     </div>
