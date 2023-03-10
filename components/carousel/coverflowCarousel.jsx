@@ -68,7 +68,7 @@ const CoverflowCarousel = () => {
                           <Image
                             src={img}
                             alt={title}
-                            className="swiper-lazy h-[400px] w-full object-cover"
+                            className="swiper-lazy h-[400px] w-full object-cover object-left-top"
                             height="300"
                             width="379"
                           />
@@ -86,9 +86,9 @@ const CoverflowCarousel = () => {
                             </a>
                           </Link>
                           <div className="flex mt-2">
-                            {tags && tags.map(tag=><p className="text-2xs text-accent px-5 py-1 bg-accent-light rounded-full mr-2">{tag}</p>)}
+                            {tags && tags.map(tag=><p className="text-sm text-accent px-5 py-1 my-2 bg-accent-light rounded-full mr-2">{tag}</p>)}
                           </div>
-                          <p className="text-sm leading-5 text-jacarta-700 hover:text-accent dark:text-white mt-2">{description && description}</p>
+                          <p className="text-sm leading-6 text-jacarta-700 hover:text-accent dark:text-white mt-2 py-2">{description && description}</p>
                         </div>
                       </div>
                     </div>
