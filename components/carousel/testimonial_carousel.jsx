@@ -35,7 +35,7 @@ const Testimonial_carousel = () => {
           return (
             <SwiperSlide className="text-white" key={id}>
               <div
-                className={`testimonial-item flex flex-wrap gap-5 rounded-2.5xl bg-white p-12 dark:bg-jacarta-700 lg:flex-nowrap  ${
+                className={`testimonial-item flex flex-wrap gap-5 rounded-2.5xl bg-white p-12 dark:bg-jacarta-700   ${
                   pathChecking(route.asPath, "/home/home_10")
                     ? "border dark:border-0 border-jacarta-100"
                     : ""

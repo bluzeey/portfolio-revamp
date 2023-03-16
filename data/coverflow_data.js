@@ -9,7 +9,7 @@ export const coverflow_data = [
   {
     img: "/images/projects/alanNews.svg",
     title: "Alan News AI",
-    tags:['React','AlanAi','Material-UI'],
+    tags:['React','AlanAi','MUI'],
     description: 'One of my unique builds, I created a voice-powered AI news application. The application is uses Alan AI studio for listening to user queries. The design is based on Material-UI framework.',
     id: "2",
   },
@@ -37,7 +37,7 @@ export const coverflow_data = [
   {
     img: "/images/projects/reactQuiz.svg",
     title: "React Quiz",
-    tags:['React','Styled Components','Typescript'],
+    tags:['React','Typescript'],
     description: 'I created React App with Typescript. It is a quiz game of 10 questions which works like Trivia.',
     id: "6",
   },
@@ -58,7 +58,7 @@ export const coverflow_data = [
   {
     img: "/images/projects/twitterDev.svg",
     title: "Twitter Dev",
-    tags:['ReactJs','Mongoose','GraphQL'],
+    tags:['Mongoose','GraphQL'],
     description: 'In this project, I created a full stack social media application having design based on Twitter. The application can create, update and delete posts on real time.',
     id: "9",
   },
@@ -72,7 +72,7 @@ export const coverflow_data = [
   {
     img: "/images/projects/netflixClone.svg",
     title: "Netflix Clone",
-    tags:['ReactJs','NeflixClone'],
+    tags:['ReactJs','CSS-in-JS'],
     description: 'Created with mobile-first principle designs an OTT Platform having authentication with the Firebase Auth and video playing functionality using ReactJS and Styled Components (reusable Compound Components). The design is heavily inspired by Netflix.',
     id: "11",
   }
