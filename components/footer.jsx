@@ -8,7 +8,7 @@ const footer = () => {
 
       <footer className="dark:bg-jacarta-900 page-footer bg-white">
         <div className="container">
-          <div className="grid grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12">
+          <div className="flex justify-center">
             <div className="col-span-3 md:col-span-4">
               {/* <!-- Logo --> */}
               <Link href="#">
@@ -31,8 +31,7 @@ const footer = () => {
                 </a>
               </Link>
               <p className="dark:text-jacarta-300 mb-12">
-                Create, sell and collect truly rare digital artworks. Powered by
-                blockchain technology.
+                Let's develop something truly amazing together.
               </p>
 
               {/* <!-- Socials --> */}
@@ -56,7 +55,7 @@ const footer = () => {
               </div>
             </div>
 
-            {footerMenuList.map((single) => (
+            {/* {footerMenuList.map((single) => (
               <div
                 className={`col-span-full sm:col-span-3 md:col-span-2 ${single.diffClass}`}
                 key={single.id}
@@ -79,7 +78,7 @@ const footer = () => {
                   })}
                 </ul>
               </div>
-            ))}
+            ))} */}
           </div>
 
           <div className="flex flex-col items-center justify-between space-y-2 py-8 sm:flex-row sm:space-y-0">

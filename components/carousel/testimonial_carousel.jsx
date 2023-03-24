@@ -44,12 +44,12 @@ const Testimonial_carousel = () => {
                 <img
                   src={img}
                   alt={title}
-                  className="testimonial-img w-28 self-start rounded-2.5xl lg:w-auto"
+                  className="testimonial-img w-24 h-24 self-start rounded-2.5xl lg:w-auto"
                 />
                 <div>
                   
                 </div>
-                <div className="-ml-14 -mt-4 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-[5px] border-white bg-accent dark:border-jacarta-700 md:mb-0 md:w-16">
+                <div className="-ml-14 -mt-4 flex h-16 w-16 shrink-0 items-center justify-start rounded-full border-[5px] border-white bg-accent dark:border-jacarta-700 md:mb-0 md:w-16">
                   <img src="/images/testimonials/quote.png" alt="quote" />
                 </div>
                   <p className="testimonial-desc text-md leading-normal text-jacarta-700 dark:text-white">
@@ -58,7 +58,7 @@ const Testimonial_carousel = () => {
                   <span className="testimonial-name mt-6 block font-display text-sm font-medium text-jacarta-700 dark:text-white">
                     {name}
                   </span>
-                  <span className="testimonial-title text-2xs font-medium tracking-tight text-jacarta-400">
+                  <span className="testimonial-title  text-2xs font-medium tracking-tight text-jacarta-400">
                     {title}
                   </span>
                 </div>
