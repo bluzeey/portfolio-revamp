@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const hero = () => {
   return (
-    <section className="relative pb-10 pt-20 md:pt-32 h-1527">
+    <section className="relative pb-10 pt-20 md:pt-32 h-1900">
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 block dark:hidden h-full">
         <img
           src="/images/gradient.jpg"
