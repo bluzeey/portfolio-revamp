@@ -58,7 +58,7 @@ const Testimonial_carousel = () => {
                   <span className="testimonial-title text-md font-medium tracking-tight text-jacarta-400 justify-self-start">
                     {title}
                   </span>
-                  <span className="testimonial-name mt-6  font-display text-sm font-medium text-jacarta-700 dark:text-white">
+                  <span className="testimonial-name mt-0.5 font-display text-sm font-medium text-jacarta-700 dark:text-white">
                     {name}
                   </span>
                 </div>
