@@ -90,7 +90,7 @@ const CoverflowCarousel = () => {
                             </a>
                           </Link>
                           <div className="flex mt-2">
-                            {tags && tags.map(tag=><p className="text-sm text-accent px-5 py-1 my-2 bg-accent-light rounded-full mr-2">{tag}</p>)}
+                            {tags && tags.map(tag=><p key={tag} className="text-sm text-accent px-5 py-1 my-2 bg-accent-light rounded-full mr-2">{tag}</p>)}
                           </div>
                           <p className="text-sm leading-6 text-jacarta-700 hover:text-accent dark:text-white mt-2 py-2">{description && description}</p>
                         </div>

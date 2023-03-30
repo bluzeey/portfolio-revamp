@@ -25,7 +25,7 @@ const hero = () => {
               Hi , <br/> <span className="animate-gradient">I am Sahil.</span>
             </h1>
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-              Welcome to my website! I'm a Full stack developer with experience working for 2+ companies and collaborating with a wide range of freelancing clients. 
+              Welcome to my website! I&apos;m a Full stack developer with experience working for 2+ companies and collaborating with a wide range of freelancing clients. 
             </p>
             <div className="flex space-x-4">
               <Link href="/create">
@@ -67,19 +67,19 @@ const hero = () => {
         </h2>
         <ul>
          <li className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-         As a highly skilled and dedicated web developer, I have the skills, knowledge, and experience necessary to help you create a website that's not only visually stunning but also highly functional and user-friendly.
+         As a highly skilled and dedicated web developer, I have the skills, knowledge, and experience necessary to help you create a website that&apos;s not only visually stunning but also highly functional and user-friendly.
          </li>
          <li className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
          With several years of experience in the industry, I have a deep understanding of the latest web development trends and technologies. From responsive design to user experience optimization, I have the skills and knowledge necessary to build a website that not only looks great but also delivers exceptional performance and usability.
          </li>
          <li className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-         But what really sets me apart is my commitment to my clients. I believe in taking a collaborative approach to web development, working closely with my clients to understand their unique needs and goals. Whether you're looking to build a new website from scratch or revamp an existing one, I'll work with you every step of the way to ensure that your vision is brought to life.
+         But what really sets me apart is my commitment to my clients. I believe in taking a collaborative approach to web development, working closely with my clients to understand their unique needs and goals. Whether you&apos;re looking to build a new website from scratch or revamp an existing one, I&apos;ll work with you every step of the way to ensure that your vision is brought to life.
          </li>
          <li className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-         But my commitment to my clients doesn't end there. I understand that web development is an ongoing process, and I'm dedicated to providing ongoing support and maintenance to ensure that your website continues to perform at its best. From bug fixes to security updates, I'm here to help you keep your website running smoothly and efficiently.
+         But my commitment to my clients doesn&apos;t end there. I understand that web development is an ongoing process, and I&apos;m dedicated to providing ongoing support and maintenance to ensure that your website continues to perform at its best. From bug fixes to security updates, I&apos;m here to help you keep your website running smoothly and efficiently.
          </li>
          <li className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-         So if you're looking for a web developer who is not only highly skilled and experienced but also deeply committed to your success, look no further. Contact me today to discuss your project and learn more about how I can help you take your online presence to the next level.
+         So if you&apos;re looking for a web developer who is not only highly skilled and experienced but also deeply committed to your success, look no further. Contact me today to discuss your project and learn more about how I can help you take your online presence to the next level.
          </li>
         </ul>     
       </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { footerMenuList, socialIcons } from "../data/footer_data";
+import { socialIcons } from "../data/footer_data";
 
 const footer = () => {
   return (
@@ -31,7 +31,7 @@ const footer = () => {
                 </a>
               </Link>
               <p className="dark:text-jacarta-300 mb-12">
-                Let's develop something truly amazing together.
+                Let&apos;s develop something truly amazing together.
               </p>
 
               {/* <!-- Socials --> */}
@@ -54,31 +54,6 @@ const footer = () => {
                 })}
               </div>
             </div>
-
-            {/* {footerMenuList.map((single) => (
-              <div
-                className={`col-span-full sm:col-span-3 md:col-span-2 ${single.diffClass}`}
-                key={single.id}
-              >
-                <h3 className="font-display text-jacarta-700 mb-6 text-sm dark:text-white">
-                  {single.title}
-                </h3>
-                <ul className="dark:text-jacarta-300 flex flex-col space-y-1">
-                  {single.list.map((item) => {
-                    const { id, href, text } = item;
-                    return (
-                      <li key={id}>
-                        <Link href={href}>
-                          <a className="hover:text-accent dark:hover:text-white">
-                            {text}
-                          </a>
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            ))} */}
           </div>
 
           <div className="flex flex-col items-center justify-between space-y-2 py-8 sm:flex-row sm:space-y-0">
