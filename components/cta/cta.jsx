@@ -3,7 +3,7 @@ import React from 'react';
 
 const Cta = () => {
 	return (
-		<div>
+		<div id="contact">
 			{/* <!-- CTA --> */}
 			<div className="relative z-10 dark:bg-jacarta-900">
 				<div className="container pt-10">

@@ -100,14 +100,17 @@ const news_data = [
 const single_news_data = [
 	{
 		id: 'post_1',
-		text: 'Since we launched Tezos at the end of 2021, many awesome creators...',
-		title: 'Mint your own Tezos collections',
+		text: 'As someone who has always been interested in learning, I found myself drawn to Coursera,....',
+		title: 'What I learnt by doing more than 40+ certifications on Coursera',
 		image: '/images/blog/post_1.jpg',
 		date: '5 Feb',
 		time: '3 min read',
 		subImages: ['/images/blog/gallery_1.jpg', '/images/blog/gallery_2.jpg'],
 		authorImage: '/images/blog/author_large.jpg',
 		authorName: 'Deothemes',
+		firstPara:'',
+	    secondPara:'',
+		thirdPara:''
 	},
 	{
 		id: 'post_2',

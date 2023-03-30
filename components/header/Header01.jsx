@@ -471,8 +471,7 @@ export default function Header01() {
                 
                 {/* Resume */}
                 <li className="group">
-                  <Link href="/create">
-                    <a>
+                    <a href="/images/Cv.pdf" download="resume.pdf">
                       <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
                         <span
                           className={
@@ -485,17 +484,15 @@ export default function Header01() {
                         </span>
                       </button>
                     </a>
-                  </Link>
                 </li>
 
                 {/* Contact */}
                 <li className="group">
-                  <Link href="/create">
-                    <a>
+                    <a href="#contact">
                       <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
                         <span
                           className={
-                            isChildrenPageActive(route.asPath, "/create")
+                            isChildrenPageActive(route.asPath)
                               ? "text-accent dark:text-accent"
                               : ""
                           }
@@ -504,7 +501,6 @@ export default function Header01() {
                         </span>
                       </button>
                     </a>
-                  </Link>
                 </li>
               </ul>
             </nav>

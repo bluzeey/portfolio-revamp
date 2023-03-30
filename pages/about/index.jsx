@@ -45,27 +45,14 @@ const Blog = () => {
                 {/* <!-- Body --> */}
                 <div className="dark:border-jacarta-600 dark:bg-jacarta-700 border-jacarta-100 rounded-b-[1.25rem] border bg-white p-[10%] md:w-1/2 md:rounded-none md:rounded-r-[1.25rem]">
                   {/* <!-- Meta --> */}
-                  <div className="mb-3 flex flex-wrap items-center space-x-1 text-xs">
-                    <Link href="#">
-                      <a className="dark:text-jacarta-200 text-jacarta-700 font-display hover:text-accent">
-                        Deothemes
-                      </a>
-                    </Link>
-                    <span className="dark:text-jacarta-400">in</span>
-                    <span className="text-accent inline-flex flex-wrap items-center space-x-1">
-                      <a href="#">{"NFT's"}</a>
-                      <a href="#">DIGITAL ART</a>
-                    </span>
-                  </div>
 
                   <h2 className="font-display text-jacarta-700 dark:hover:text-accent hover:text-accent mb-4 text-xl dark:text-white sm:text-3xl">
                     <Link href="/single_post/post_1">
-                      <a> List your collection for secondary sales </a>
+                      <a> What I learnt by doing more than 40+ certifications on Coursera</a>
                     </Link>
                   </h2>
                   <p className="dark:text-jacarta-200 mb-8">
-                    Since we launched Tezos at the end of 2021, many awesome
-                    creators...
+                  As someone who has always been interested in learning, I found myself drawn to Coursera ...
                   </p>
 
                   {/* <!-- Date / Time --> */}
@@ -79,20 +66,7 @@ const Blog = () => {
                 </div>
               </div>
             </article>
-
             <News_item data={data} />
-
-            {/* <!-- Load More --> */}
-            {loadMoreBtn && (
-              <div className="mt-10 text-center">
-                <button
-                  onClick={handleLoadMore}
-                  className="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
-                >
-                  Load More
-                </button>
-              </div>
-            )}
           </div>
         </div>
       </section>

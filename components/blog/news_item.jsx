@@ -28,20 +28,6 @@ const News_item = ({
 
 								{/* <!-- Body --> */}
 								<div className="dark:border-jacarta-600 dark:bg-jacarta-700 border-jacarta-100 rounded-b-[1.25rem] border border-t-0 bg-white p-[10%]">
-									{/* <!-- Meta --> */}
-									<div className="mb-3 flex flex-wrap items-center space-x-1 text-xs">
-										<a
-											href="#"
-											className="dark:text-jacarta-200 text-jacarta-700 font-display hover:text-accent"
-										>
-											Deothemes
-										</a>
-										<span className="dark:text-jacarta-400">in</span>
-										<span className="text-accent inline-flex flex-wrap items-center space-x-1">
-											<a href="#">{"NFT's"}</a>
-											<a href="#">DIGITAL ART</a>
-										</span>
-									</div>
 
 									<h2 className="font-display text-jacarta-700 dark:hover:text-accent hover:text-accent mb-4 text-xl dark:text-white">
 										<Link href={`single_post/${link}`}>
