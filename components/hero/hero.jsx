@@ -43,18 +43,20 @@ const hero = () => {
 
           {/* <!-- Hero image --> */}
           <div className="col-span-6 xl:col-span-8">
-            <div className="relative text-center md:pl-8 md:text-right">
-              <img
-                src="/images/hero/hero.svg"
-                alt=""
-                className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] xl:w-[35rem]"
-              />
-              <img
-                src="/images/hero/3D_elements.png"
-                alt=""
-                className="animate-fly absolute top-0 md:-right-[10%]"
-              />
-            </div>
+          <div className="relative">
+                <figure className="flex items-center justify-center">
+                  <img
+                    src="/images/hero/hero.svg"
+                    alt="benifit"
+                    className="rounded-full border border-jacarta-100 p-2 dark:border-jacarta-600"
+                  />
+                  <img
+                    src="/images/dao/3d_elements_circle.png"
+                    alt="benifit"
+                    className="absolute animate-spin-slow"
+                  />
+                </figure>
+              </div>
           </div>
         </div>
       </div>

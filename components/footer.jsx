@@ -8,25 +8,25 @@ const footer = () => {
 
       <footer className="dark:bg-jacarta-900 page-footer bg-white">
         <div className="container">
-          <div className="flex justify-center">
-            <div className="col-span-3 md:col-span-4">
+          <div className="flex justify-center items-center">
+            <div className="m-auto">
               {/* <!-- Logo --> */}
               <Link href="#">
-                <a className="mb-6 inline-block">
+                <a className="flex justify-center my-3">
                   <img
-                    src="/images/logo.png"
-                    className="max-h-7 dark:hidden"
+                    src="/images/logo.svg"
+                    className="h-12 dark:hidden"
                     alt="Xhibiter | NFT Marketplace"
                   />
                 </a>
               </Link>
 
               <Link href="#">
-                <a className=" mb-6 inline-block">
+                <a className="flex justify-center my-3">
                   <img
-                    src="/images/logo_white.png"
-                    className="hidden max-h-7 dark:block mb-6"
-                    alt="Xhibiter | NFT Marketplace"
+                    src="/images/logo_white.svg"
+                    className="hidden h-12 dark:block mb-6"
+                    alt="Developer Logo"
                   />
                 </a>
               </Link>
@@ -35,7 +35,7 @@ const footer = () => {
               </p>
 
               {/* <!-- Socials --> */}
-              <div className="flex space-x-5">
+              <div className="flex space-x-5 justify-center">
                 {socialIcons.map((item) => {
                   const { id, href, text } = item;
                   return (
@@ -83,11 +83,11 @@ const footer = () => {
 
           <div className="flex flex-col items-center justify-between space-y-2 py-8 sm:flex-row sm:space-y-0">
             <span className="dark:text-jacarta-400 text-sm">
-              <span>© {new Date().getFullYear()} Xhibiter — Made by</span>
+              <span>© {new Date().getFullYear()} - Made by</span>
               <Link href="https://themeforest.net/user/ib-themes">
                 <a className="hover:text-accent dark:hover:text-white">
                   {" "}
-                  ib-themes
+                  Sahil Maheshwari
                 </a>
               </Link>
             </span>

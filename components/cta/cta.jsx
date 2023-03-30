@@ -27,11 +27,9 @@ const Cta = () => {
 										Send mail
 									</a>
 								</Link>
-								<Link href="/contact">
-									<a className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-										Schedule a Call
-									</a>
-								</Link>
+								<a href="https://calendly.com/sahilmaheshwari17/15min?month=2023-03" target="_blank" rel="noreferrer" className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
+									Schedule a Call
+								</a>
 							</div>
 							<img src="/images/crypto-consultant/cta_illustration.png" alt="" />
 						</div>
