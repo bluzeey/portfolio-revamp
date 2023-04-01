@@ -5,7 +5,7 @@ const Meta = ({ title, keyword, desc }) => {
     <div>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/images/hero/hero.svg" />
         <meta name="description" content={desc} />
         <meta name="keyword" content={keyword} />
       </Head>
@@ -14,7 +14,7 @@ const Meta = ({ title, keyword, desc }) => {
 };
 
 Meta.defaultProps = {
-  title: "Xhibiter | NFT Marketplace Next.js Template",
+  title: "Sahil Maheshwari | Web Developer",
   keyword:
     "bitcoin, blockchain, crypto, crypto collectibles, crypto makretplace, cryptocurrency, digital items, market, nft, nft marketplace, nft next js, NFT react, non-fungible tokens, virtual asset, wallet",
   desc: "The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.",
