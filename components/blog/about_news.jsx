@@ -1,5 +1,5 @@
 import React from "react";
-import { news_data } from "../../data/news_data";
+import { news_data, single_news_data } from "../../data/news_data";
 import HeadLine from "../headLine";
 import Image from "next/image";
 import News_item from "./news_item";
@@ -23,7 +23,7 @@ const About_news = () => {
             classes="font-display text-jacarta-700 mb-12 text-center text-3xl dark:text-white"
           />
 
-          <News_item data={news_data.slice(1, 4)} />
+          <News_item data={single_news_data.slice(1, 4)} />
         </div>
       </section>
       {/* <!-- end latest posts --> */}

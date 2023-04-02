@@ -158,7 +158,7 @@ const Single_post = () => {
 						</div> */}
 										{/* <!-- Posts --> */}
 										<News_item
-											data={news_data.slice(4)}
+											data={single_news_data.slice(4)}
 											classes="grid grid-cols-1 gap-[1.875rem] sm:grid-cols-2"
 										/>
 									</div>

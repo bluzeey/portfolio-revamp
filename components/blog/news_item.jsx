@@ -9,7 +9,7 @@ const News_item = ({
 		<>
 			<div className={classes}>
 				{data.map((item) => {
-					const { id, image, title, text, date, time } = item;
+					const { id, image, title, text} = item;
 					const link = image.split('/').slice(3).toString().replace('.jpg', '');
 					return (
 						<article key={id}>
@@ -35,15 +35,6 @@ const News_item = ({
 										</Link>
 									</h2>
 									<p className="dark:text-jacarta-200 mb-8">{text}</p>
-
-									{/* <!-- Date / Time --> */}
-									<div className="text-jacarta-400 flex flex-wrap items-center space-x-2 text-sm">
-										<span>
-											<time>{date}</time>
-										</span>
-										<span>•</span>
-										<span>{time}</span>
-									</div>
 								</div>
 							</div>
 						</article>

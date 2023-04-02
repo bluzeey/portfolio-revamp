@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import News_item from "../../components/blog/news_item";
-import { news_data } from "../../data/news_data";
+import { news_data, single_news_data } from "../../data/news_data";
 import Meta from "../../components/Meta";
 
 const Blog = () => {
   const [loadMoreBtn, setLoadMoreBtn] = useState(true);
-  const [data, setdata] = useState(news_data.slice(0, 6));
+  const [data, setdata] = useState(single_news_data.slice(0, 5));
 
   const handleLoadMore = () => {
     setdata(news_data);
@@ -54,15 +54,6 @@ const Blog = () => {
                   <p className="dark:text-jacarta-200 mb-8">
                   As someone who has always been interested in learning, I found myself drawn to Coursera ...
                   </p>
-
-                  {/* <!-- Date / Time --> */}
-                  <div className="text-jacarta-400 flex flex-wrap items-center space-x-2 text-sm">
-                    <span>
-                      <time>5 Feb</time>
-                    </span>
-                    <span>•</span>
-                    <span>3 min read</span>
-                  </div>
                 </div>
               </div>
             </article>
