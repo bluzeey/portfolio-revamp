@@ -33,11 +33,9 @@ const hero = () => {
                   My Work
                 </a>
               </Link>
-              <Link href="/collection/explore_collection">
-                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
+                <a href="#contact" className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
                   Hire Me!
                 </a>
-              </Link>
             </div>
           </div>
 
@@ -53,7 +51,7 @@ const hero = () => {
                   <img
                     src="/images/dao/3d_elements_circle.png"
                     alt="benifit"
-                    className="absolute animate-spin-slow"
+                    className="absolute w-3/4 lg:w-7/10 animate-spin-slow"
                   />
                 </figure>
               </div>
