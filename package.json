@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "export":"next export"
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "11.9.3",
@@ -21,6 +21,7 @@
     "metamask-react": "2.4.0",
     "moment": "2.29.4",
     "next": "12.1.6",
+    "next-seo": "^6.0.0",
     "next-themes": "0.2.0",
     "react": "18.2.0",
     "react-accessible-accordion": "5.0.0",
