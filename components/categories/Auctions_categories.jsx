@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import HeadLine from '../headLine';
 import Auctions_category_data from '../../data/auctions_category_data';
 import Tippy from '@tippyjs/react';
-import Countdown_timer from '../Countdown_timer';
 import Auctions_dropdown from '../dropdown/Auctions_dropdown';
 import Link from 'next/link';
 import { bidsModalShow } from '../../redux/counterSlice';
@@ -32,7 +31,7 @@ const Auctions_categories = () => {
 					/>
 					<div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4">
 						{data.map((item) => {
-							const { id, bigImage, creatorImage, ownerImage, title, price, likes, auction_timer } =
+							const { id, bigImage, creatorImage, ownerImage, title, price, likes } =
 								item;
 							const itemLink = bigImage
 								.split('/')
@@ -94,7 +93,6 @@ const Auctions_categories = () => {
 													/>
 												</a>
 											</Link>
-											<Countdown_timer time={+auction_timer} />
 										</figure>
 										<div className="mt-7 flex items-center justify-between">
 											<Link href={/item/ + itemLink}>

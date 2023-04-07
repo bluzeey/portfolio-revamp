@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { socialIcons } from "../data/footer_data";
+import Image from "next/image";
 
 const footer = () => {
   return (
@@ -13,7 +14,9 @@ const footer = () => {
               {/* <!-- Logo --> */}
               <Link href="#">
                 <a className="flex justify-center my-3">
-                  <img
+                  <Image
+                    width={48}
+                    height={48}
                     src="/images/logo.svg"
                     className="h-12 dark:hidden"
                     alt="Xhibiter | NFT Marketplace"
@@ -23,7 +26,9 @@ const footer = () => {
 
               <Link href="#">
                 <a className="flex justify-center my-3">
-                  <img
+                  <Image
+                    width={48}
+                    height={48}
                     src="/images/logo_white.svg"
                     className="hidden h-12 dark:block mb-6"
                     alt="Developer Logo"
