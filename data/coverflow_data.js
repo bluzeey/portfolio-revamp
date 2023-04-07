@@ -9,7 +9,7 @@ export const coverflow_data = [
     live:"https://crypto-currency-world.netlify.app/"
   },
   {
-    img: "/images/projects/alanNews.svg",
+    img: "/images/projects/alannews.svg",
     title: "Alan News AI",
     tags:['React','AlanAi','MUI'],
     description: 'One of my unique builds, I created a voice-powered AI news application. The application is uses Alan AI studio for listening to user queries. The design is based on Material-UI framework.',
@@ -18,7 +18,7 @@ export const coverflow_data = [
     live:"https://ai-powered-news-react.netlify.app/"
   },
   {
-    img: "/images/projects/eCommerceStore.svg",
+    img: "/images/projects/ecommercestore.svg",
     title: "E Commerce Store",
     tags:['React','CommerceJS'],
     description: 'Made an online e-commerce application using Commerce JS for all the business logic. It can purchase different items and store important financial information of clients.',
@@ -27,7 +27,7 @@ export const coverflow_data = [
     live:"https://ecommerce-storev2.netlify.app/"
   },
   {
-    img: "/images/projects/fireBlogs.svg",
+    img: "/images/projects/fireblogs.svg",
     title: "Fireblog",
     tags:['VueJS','Firebase'],
     description: 'I created an application using VUEjs and Firebase. It is a blog posting web application which includes the function of adding ,removing ,updating posts.',
@@ -36,7 +36,7 @@ export const coverflow_data = [
     live:"https://fireblog-alpha.vercel.app/"
   },
   {
-    img: "/images/projects/googleSearch.svg",
+    img: "/images/projects/googlesearch.svg",
     title: "Search Application",
     tags:['NextJs','Tailwind'],
     description: 'Created a mobile responsive search engine with complete search functionalities by linking to Google Search API. Made the design more robust with the help of JIT Tailwind and is inspired by Google.Added pagination to results displayed using state management.',
@@ -45,7 +45,7 @@ export const coverflow_data = [
     live:"https://google-clone-v2.vercel.app/"
   },
   {
-    img: "/images/projects/reactQuiz.svg",
+    img: "/images/projects/reactquiz.svg",
     title: "React Quiz",
     tags:['React','Typescript'],
     description: 'I created React App with Typescript. It is a quiz game of 10 questions which works like Trivia.',
@@ -54,7 +54,7 @@ export const coverflow_data = [
     live:"https://quiz-with-react.netlify.app/"
   },
   {
-    img: "/images/projects/expenseTracker.svg",
+    img: "/images/projects/expensetracker.svg",
     title: "Voice Powered Expense Tracker",
     tags:['ReactJs','Speechly'],
     description: 'I made a voice-powered Expense Tracker using Speechly API. The application uses Speechly API for voice recognition and responding voice commands for adding transactions.',
@@ -63,7 +63,7 @@ export const coverflow_data = [
     live:"https://expense-trackerv2.netlify.app/"
   },
   {
-    img: "/images/projects/whatsappClone.svg",
+    img: "/images/projects/whatsappclone.svg",
     title: "Chat Application",
     tags:['VueJS','Firebase'],
     description: "An email-based chat application in NextJS with React, Styled-components, Firebase for persistence and Firebase Auth for authentication. The design is heavily inspired by WhatsApp's Desktop client.",
@@ -72,7 +72,7 @@ export const coverflow_data = [
     live:"https://whatsappv2-nextjs.vercel.app/"
   },
   {
-    img: "/images/projects/twitterDev.svg",
+    img: "/images/projects/twitterdev.svg",
     title: "Twitter Dev",
     tags:['Mongoose','GraphQL'],
     description: 'In this project, I created a full stack social media application having design based on Twitter. The application can create, update and delete posts on real time.',
@@ -81,7 +81,7 @@ export const coverflow_data = [
     live:"https://twitter-dev-mergn.netlify.app/"
   },
   {
-    img: "/images/projects/videoChat.svg",
+    img: "/images/projects/videochat.svg",
     title: "Video Chatting Application",
     tags:['ReactJS','Web Socket'],
     description: 'I have been very interested in creating application with video chatting. It includes video chatting to different people through their IDs.',
@@ -90,7 +90,7 @@ export const coverflow_data = [
     live:"https://video-chatting-app.vercel.app/"
   },
   {
-    img: "/images/projects/netflixClone.svg",
+    img: "/images/projects/netflixclone.svg",
     title: "Netflix Clone",
     tags:['ReactJs','CSS-in-JS'],
     description: 'Created with mobile-first principle designs an OTT Platform having authentication with the Firebase Auth and video playing functionality using ReactJS and Styled Components (reusable Compound Components). The design is heavily inspired by Netflix.',
