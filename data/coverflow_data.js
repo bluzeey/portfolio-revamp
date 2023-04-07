@@ -1,6 +1,6 @@
 export const coverflow_data = [
   {
-    img: "/images/projects/cryptoWorld.svg",
+    img: "/images/projects/cryptoworld.svg",
     title: "CryptoWorld",
     tags:['React','APIs'],
     description: 'It is an application which tells you the existing data about different cryptocurrencies.',

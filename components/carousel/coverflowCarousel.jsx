@@ -63,17 +63,13 @@ const CoverflowCarousel = () => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-700">
                     <figure className="relative">
-                      <Link href={"/item/" + itemLink}>
-                        <a>
-                          <Image
+                        <Image
                             src={img}
                             alt={title}
                             className="swiper-lazy h-[400px] w-full object-cover object-left-top"
                             height="300"
                             width="379"
                           />
-                        </a>
-                      </Link>
                       <div className="absolute w-full flex justify-around p-8 pt-4 -mt-16">
                             <a href={code} className="text-sm text-white px-5 py-1 my-2 bg-blue rounded-full mr-2">code</a>
                             <a href={live} className="text-sm text-white px-5 py-1 my-2 bg-blue rounded-full mr-2">live</a>
