@@ -34,7 +34,7 @@ const Download = () => {
 									>
 										<img
 											src="/images/playStore.png"
-											alt=""
+											alt="play store"
 											className="mr-2 h-5 w-5 fill-jacarta-700 dark:fill-white"
 										/>
 										Google play
@@ -48,7 +48,7 @@ const Download = () => {
 						<div className="mb-10 hidden lg:order-3 lg:block lg:w-2/4 xl:w-[30%]">
 							<div className="flex items-center space-x-8 lg:pl-6">
 								<div className="inline-block flex-shrink-0 rounded-2.5xl border border-jacarta-100 bg-white p-6">
-									<img src="/images/qr.png" alt="" />
+									<img src="/images/qr.png" alt="qr code" />
 								</div>
 								<div className="text-left">
 									<svg

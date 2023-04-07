@@ -64,13 +64,13 @@ const Statistic = () => {
 						<div className="relative text-center lg:w-1/2">
 							<img
 								src="/images/nft-game/gradient_glow_large_1.png"
-								alt=""
+								alt="gradient-glow"
 								loading="lazy"
 								className="absolute scale-150"
 							/>
 							<img
 								src="/images/nft-game/robot_large_1.png"
-								alt=""
+								alt="robot-large"
 								loading="lazy"
 								className="relative -top-10 inline-block"
 							/>

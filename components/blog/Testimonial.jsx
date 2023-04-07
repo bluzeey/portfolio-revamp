@@ -44,7 +44,7 @@ const Testimonial = ({ bgWhite }) => {
 
           <img
             src="/images/testimonials.jpg"
-            alt=""
+            alt="testimonial"
             className="w-28 self-start rounded-2.5xl lg:w-auto"
           />
         </div>

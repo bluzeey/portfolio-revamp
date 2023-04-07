@@ -31,7 +31,7 @@ const Faq = () => {
                   <img
                     src="/images/patterns/pattern_circle_1.png"
                     className="absolute -top-10 -left-8 -z-10 animate-fly dark:z-0 dark:opacity-10"
-                    alt=""
+                    alt="pattern-circle"
                   />
                   <div>
                     <span className="mb-4 block font-display text-base text-white">

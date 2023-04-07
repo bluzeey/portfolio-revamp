@@ -23,7 +23,7 @@ const Parks = () => {
 								/>
 								<img
 									src="/images/hero/3D_elements.png"
-									alt=""
+									alt="elements"
 									className="absolute top-0 animate-fly"
 								/>
 							</div>

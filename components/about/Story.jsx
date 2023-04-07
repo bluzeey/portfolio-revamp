@@ -21,10 +21,11 @@ const Story = ({ compFor }) => {
                     width="200"
                     height="200"
                     className="mx-auto mt-8 w-[80%] rotate-[8deg] rounded-[10rem]"
+                    alt="story jpg"
                   />
                   <img
                     src="/images/hero/3D_elements.png"
-                    alt=""
+                    alt="animated-icons"
                     className="animate-fly absolute top-0"
                   />
                 </div>
@@ -137,13 +138,14 @@ const Story = ({ compFor }) => {
               <div className="relative">
                 <img
                   src="/images/about/story.jpg"
+                  alt="story image"
                   width="200"
                   height="200"
                   className="mx-auto mt-8 w-[80%] rotate-[8deg] rounded-[10rem]"
                 />
                 <img
                   src="/images/hero/3D_elements.png"
-                  alt=""
+                  alt="elements"
                   className="animate-fly absolute top-0"
                 />
               </div>

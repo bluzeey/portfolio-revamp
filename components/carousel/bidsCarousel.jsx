@@ -87,7 +87,7 @@ const BidsCarousel = () => {
                       <Tippy content={<span>ETH</span>}>
                         <img
                           src="/images/eth-icon.svg"
-                          alt=""
+                          alt="eth"
                           className="w-3 h-3 mr-1"
                         />
                       </Tippy>

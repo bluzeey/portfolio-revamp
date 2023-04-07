@@ -61,7 +61,7 @@ const Characters_carousel = () => {
 											<div className="rounded-[1.125rem] bg-jacarta-900 p-8">
 												<img
 													src="/images/nft-game/gradient_glow_small.png"
-													alt=""
+													alt="gradient"
 													className="absolute inset-0"
 												/>
 												<figure className="relative my-4 mb-14">

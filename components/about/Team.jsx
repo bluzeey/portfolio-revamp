@@ -57,7 +57,7 @@ const Team = () => {
                           data-prefix="fab"
                           data-icon="twitter"
                           className="group-hover:fill-accent fill-jacarta-300 h-4 w-4 dark:group-hover:fill-white"
-                          role="img"
+                          role=""
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
                         >
