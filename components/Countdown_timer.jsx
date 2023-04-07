@@ -1,4 +1,5 @@
 import Countdown from "react-countdown";
+import Image from "next/image";
 
 const Completionist = () => {
   return (
@@ -21,9 +22,11 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return (
       <>
         <div className="text-2xs absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center space-x-1 rounded-full bg-white py-2.5 px-6 font-medium">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/23f3.png"
             alt=""
+            width={14}
+            height={14}
             className="h-3.5 w-3.5 shrink-0 bg-contain bg-center"
           />
           <span className="js-countdown-timer text-jacarta-700 shrink-0 whitespace-nowrap">

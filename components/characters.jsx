@@ -1,5 +1,6 @@
 import React from 'react';
 import Characters_carousel from './carousel/characters_carousel';
+import Image from 'next/image';
 
 const Characters = () => {
 	return (
@@ -7,7 +8,7 @@ const Characters = () => {
 			{/* <!-- Characters Slider --> */}
 			<section className="characters-section relative pb-12 pt-24 lg:py-36">
 				<picture className="pointer-events-none absolute inset-0 -z-10">
-					<img src="/images/gradient_creative.jpg" alt="gradient" className="h-full w-full" />
+					<Image width={"100%"} height={"100%"} src="/images/gradient_creative.jpg" alt="gradient" className="h-full w-full" />
 				</picture>
 				<div className="container">
 					<h2 className="mx-auto mb-16 max-w-md text-center font-display text-3xl text-white">
