@@ -64,7 +64,7 @@ const footer = () => {
           <div className="flex flex-col items-center justify-between space-y-2 py-8 sm:flex-row sm:space-y-0">
             <span className="dark:text-jacarta-400 text-sm">
               <span>© {new Date().getFullYear()} - Made by</span>
-              <Link href="https://themeforest.net/user/ib-themes">
+              <Link href="https://twitter.com/TalkinIdeas">
                 <a className="hover:text-accent dark:hover:text-white">
                   {" "}
                   Sahil Maheshwari

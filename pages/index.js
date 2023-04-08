@@ -37,7 +37,7 @@ export default function Home() {
             type: 'image/jpeg',
           },
           {
-            url: 'https://sahilmaheshwari.com/images/projects/googleSearch.svg',
+            url: 'https://sahilmaheshwari.com/images/projects/googlesearch.svg',
             width: 900,
             height: 800,
             alt: 'Search Application Project on  portfolio',
