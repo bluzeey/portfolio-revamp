@@ -81,7 +81,7 @@ export const coverflow_data = [
     live:"https://twitter-dev-mergn.netlify.app/"
   },
   {
-    img: "/images/projects/videochat.svg",
+    img: "/images/projects/video-chat.svg",
     title: "Video Chatting Application",
     tags:['ReactJS','Web Socket'],
     description: 'I have been very interested in creating application with video chatting. It includes video chatting to different people through their IDs.',
