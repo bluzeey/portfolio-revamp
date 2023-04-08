@@ -28,11 +28,9 @@ const hero = () => {
               Welcome to my website! I&apos;m a Full stack developer with experience working for 2+ companies and collaborating with a wide range of freelancing clients. 
             </p>
             <div className="flex space-x-4">
-              <Link href="/create">
-                <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                  My Work
-                </a>
-              </Link>
+                <span className="bg-accent shadow-accent-volume hover:bg-accent-dark w-48 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+                  See my work &darr;
+                </span>
                 <a href="#contact" className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
                   Hire Me!
                 </a>
