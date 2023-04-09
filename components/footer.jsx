@@ -3,7 +3,7 @@ import { socialIcons } from "../data/footer_data";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
-const footer = () => {
+const Footer = () => {
   const { theme, setTheme } = useTheme();
   return (
     <>
@@ -74,4 +74,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
