@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { socialIcons } from "../data/footer_data";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 const footer = () => {
+  const { theme, setTheme } = useTheme();
   return (
     <>
       {/* <!-- Footer --> */}
@@ -12,27 +14,21 @@ const footer = () => {
           <div className="flex justify-center items-center">
             <div className="m-auto">
               {/* <!-- Logo --> */}
-              <Link href="#">
+              <Link  href="#">
                 <a className="flex justify-center my-3">
-                  <Image
+                  {theme == 'light' ? <Image
                     width={48}
                     height={48}
                     src="/images/logo.svg"
-                    className="h-12 dark:hidden"
-                    alt="Xhibiter | NFT Marketplace"
-                  />
-                </a>
-              </Link>
-
-              <Link href="#">
-                <a className="flex justify-center my-3">
-                  <Image
-                    width={48}
-                    height={48}
-                    src="/images/logo_white.svg"
-                    className="hidden h-12 dark:block mb-6"
+                    className="h-12 mb-6"
                     alt="Developer Logo"
-                  />
+                  /> : <Image
+                  width={48}
+                  height={48}
+                  src="/images/logo_white.svg"
+                  className="h-12 mb-6"
+                  alt="Developer Logo"
+                />}
                 </a>
               </Link>
               <p className="dark:text-jacarta-300 mb-12">

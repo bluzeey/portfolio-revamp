@@ -12,5 +12,12 @@ export const testimonial_data = [
 		id: '1General Partner at Entrepreneur',
 		name: 'Lan Li',
 		img: '/images/testimonials/lanli.jpeg',
+	},
+	{
+		title: 'Founder at Sycotic Society',
+		desc: "Hello, my name is Edgar Vanderzee founder of Sycotic Society.  Sahil is a very dedicated coding specialist.  Sahil is currently working on my project to date and without him I don't know how I would have been able to finally start to get some of my visions brought to reality.  He is amazing at his craft.  🙏",
+		id: '1General Partner at Entrepreneur',
+		name: 'Edgar Van Zee',
+		img: '/images/testimonials/edgar.jpg',
 	}
 ];
