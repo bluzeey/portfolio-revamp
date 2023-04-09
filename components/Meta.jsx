@@ -16,8 +16,11 @@ const Meta = ({ title, keyword, desc }) => {
 Meta.defaultProps = {
   title: "Sahil Maheshwari | Web Developer",
   keyword:
-    "bitcoin, blockchain, crypto, crypto collectibles, crypto makretplace, cryptocurrency, digital items, market, nft, nft marketplace, nft next js, NFT react, non-fungible tokens, virtual asset, wallet",
-  desc: "The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.",
+    `Full-stack development,Next.js development,HTML/CSS development,Web development portfolio,Client projects,Company projects,Professional experience,2+ years experience,Web development services,Custom website development,Responsive design,User experience design,
+    Web applications,
+    Web design,
+    Software development`,
+  desc: "Skilled full-stack developer with 2+ years of experience in React, Next.js, HTML/CSS, and JavaScript. Browse my portfolio for custom website and web app examples. Expert in responsive design and user experience. Contact me for professional web development services.",
 };
 
 export default Meta;
