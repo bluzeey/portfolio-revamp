@@ -1,6 +1,4 @@
----
-title: Web Developer | John Doe
----
+
 
 # About Me
 
