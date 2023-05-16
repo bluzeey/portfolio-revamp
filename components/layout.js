@@ -1,7 +1,4 @@
 import Footer from "./footer";
-import Wallet_modal from "./modal/wallet_modal";
-import BidsModal from "./modal/bidsModal";
-import BuyModal from "./modal/buyModal";
 import { useRouter } from "next/router";
 import Header01 from "./header/Header01";
 import Header02 from "./header/Header02";
@@ -26,9 +23,6 @@ export default function Layout({ children }) {
   return (
     <>
       {header}
-      <Wallet_modal />
-      <BidsModal />
-      <BuyModal />
       <main>{children}</main>
       <Footer />
     </>

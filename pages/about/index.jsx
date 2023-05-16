@@ -16,6 +16,7 @@ const Blog = () => {
     <>
       <Meta title="Blog || Sahil Maheshwari || Web Developer" />
       {/* <!-- Blog --> */}
+      <h1 className="text-center mt-24 font-display text-4xl -mb-24">About</h1>
       <section className="relative  pt-[5.5rem] lg:pt-24">
         <div className="py-16 md:py-24">
           <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
