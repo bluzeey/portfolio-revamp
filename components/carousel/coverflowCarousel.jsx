@@ -50,7 +50,7 @@ const CoverflowCarousel = () => {
           className="swiper coverflow-slider !py-5"
         >
           {coverflow_data.map((item) => {
-            const { img, id, tags , description,  title , code , live } = item;
+            const { img, id, tags, description, title, code, live } = item;
             const itemLink = img
               .split("/")
               .slice(-1)
@@ -63,16 +63,29 @@ const CoverflowCarousel = () => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-700">
                     <figure className="relative">
-                        <Image
-                            src={img}
-                            alt={title}
-                            className="swiper-lazy h-[400px] w-full object-cover object-left-top"
-                            height="300"
-                            width="379"
-                          />
+                      <Image
+                        src={img}
+                        alt={title}
+                        className="swiper-lazy h-[400px] w-full object-cover object-left-top"
+                        height="300"
+                        width="379"
+                      />
                       <div className="absolute w-full flex justify-around p-8 pt-4 -mt-16">
-                            <a href={code} className="text-sm text-white px-5 py-1 my-2 bg-blue rounded-full mr-2">code</a>
-                            <a href={live} className="text-sm text-white px-5 py-1 my-2 bg-blue rounded-full mr-2">live</a>
+                        {code && (
+                          <a
+                            href={code}
+                            className="text-sm text-white px-5 py-1 my-2 bg-blue rounded-full mr-2"
+                          >
+                            code
+                          </a>
+                        )}
+
+                        <a
+                          href={live}
+                          className="text-sm text-white px-5 py-1 my-2 bg-blue rounded-full mr-2"
+                        >
+                          live
+                        </a>
                       </div>
                     </figure>
                     <div className="p-8 pt-4">
@@ -86,9 +99,19 @@ const CoverflowCarousel = () => {
                             </a>
                           </Link>
                           <div className="flex mt-2">
-                            {tags && tags.map(tag=><p key={tag} className="text-sm text-accent px-5 py-1 my-2 bg-accent-light rounded-full mr-2">{tag}</p>)}
+                            {tags &&
+                              tags.map((tag) => (
+                                <p
+                                  key={tag}
+                                  className="text-sm text-white px-5 py-1 my-2 bg-accent-light rounded-full mr-2"
+                                >
+                                  {tag}
+                                </p>
+                              ))}
                           </div>
-                          <p className="text-sm leading-6 text-jacarta-700 hover:text-accent dark:text-white mt-2 py-2">{description && description}</p>
+                          <p className="text-sm leading-6 text-jacarta-700 hover:text-accent dark:text-white mt-2 py-2">
+                            {description && description}
+                          </p>
                         </div>
                       </div>
                     </div>
