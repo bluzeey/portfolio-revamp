@@ -1,6 +1,6 @@
 export const coverflow_data = [
   {
-    img: "/images/projects/flutfast.png",
+    img: "/images/projects/flutfast.svg",
     title: "FlutFast",
     tags: ["Flutter", "OpenAI"],
     description:
