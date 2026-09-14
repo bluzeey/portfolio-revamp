@@ -19,6 +19,7 @@ const illustrationDescriptions: Record<IllustrationVariant, string> = {
 function resolveVariant(post: BlogIllustrationProps["post"]): IllustrationVariant {
   const subject = `${post.slug} ${post.title} ${post.tags.join(" ")}`.toLowerCase();
 
+  if (/what i want software|information continuity/.test(subject)) return "future";
   if (/judgment|claim|insurance|review|approval/.test(subject)) return "judgment";
   if (/memory|knowledge|context|retrieval|graph/.test(subject)) return "memory";
   if (/engineer|career|communication|learning|marketing/.test(subject)) return "craft";
