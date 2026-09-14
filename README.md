@@ -1,29 +1,28 @@
+# Sahil Maheshwari — Portfolio
 
+A strict-TypeScript Next.js portfolio for Sahil's product work, current research threads and working notes.
 
-# About Me
+## Local development
 
-I am a passionate web developer with over 2 years of experience. My expertise lies in building modern and scalable web applications using various technologies and frameworks.
+```bash
+npm install
+npm run dev
+```
 
-## Skills
+Open [http://localhost:3000](http://localhost:3000).
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+), React.js, Next.js
-- **Backend:** Node.js, Express.js, MongoDB
-- **Database:** MySQL, PostgreSQL, MongoDB
-- **Tools & Technologies:** Git, GitHub, VS Code, npm, webpack
-- **Testing:** Jest, Enzyme
+## Quality checks
 
-## Experience
+```bash
+npm run check
+```
 
-### Web Developer - ABC Company (2019 - Present)
+This runs strict TypeScript checking, ESLint and a production build. The same command runs in GitHub Actions.
 
-- Developed and maintained responsive web applications using React.js and Next.js.
-- Implemented RESTful APIs and integrated them with the frontend.
-- Collaborated with cross-functional teams to deliver high-quality projects.
-- Optimized application performance and improved user experience.
+## Publishing a post
 
-### Freelance Web Developer (2017 - 2019)
+Add a Markdown file to `content/blog`. The complete schema, editorial constraints and automation behavior live in [`BLOG_PIPELINE.md`](./BLOG_PIPELINE.md).
 
-- Worked with various clients to create custom websites and web applications.
-- Developed and implemented responsive designs using HTML, CSS, and JavaScript.
-- Ensured cross-browser compatibility and optimized website speed.
-- Managed project timelines and delivered projects within deadlines.
+## Design
+
+The visual source is [`DESIGN.md`](./DESIGN.md): an Inter-based dark system built from a near-black canvas, a three-step surface ladder, restrained cobalt-violet and a buttercup accent. The implementation adapts those tokens to a personal portfolio rather than reproducing the reference site's content structure.
