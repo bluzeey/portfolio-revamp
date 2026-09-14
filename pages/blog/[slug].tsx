@@ -1,5 +1,6 @@
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Link from "next/link";
+import { BlogIllustration } from "@/components/portfolio/BlogIllustration";
 import { ConversationCta } from "@/components/portfolio/ConversationCta";
 import { ArrowLeft } from "@/components/portfolio/Icons";
 import { PageShell } from "@/components/portfolio/PageShell";
@@ -67,6 +68,9 @@ export default function PostPage({ post }: InferGetStaticPropsType<typeof getSta
             {post.tags.map((tag) => <li key={tag}>{tag}</li>)}
           </ul>
         </header>
+        <div className="article-illustration-shell shell">
+          <BlogIllustration post={post} />
+        </div>
         <div className="article-divider" />
         <div className="prose shell narrow-shell" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
         <ConversationCta />

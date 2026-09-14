@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { PostMeta } from "@/lib/posts";
+import { BlogIllustration } from "./BlogIllustration";
 import { ArrowUpRight } from "./Icons";
 
 type PostCardProps = {
@@ -18,6 +19,7 @@ export function formatDate(date: string) {
 export function PostCard({ post }: PostCardProps) {
   return (
     <Link className="post-card" href={`/blog/${post.slug}`}>
+      <BlogIllustration compact post={post} />
       <div className="post-meta-row">
         <time dateTime={post.date}>{formatDate(post.date)}</time>
         <span>{post.readingMinutes} min read</span>
