@@ -4,10 +4,13 @@ export type Project = {
   detail: string;
   eyebrow: string;
   tags: readonly string[];
-  mark: "insuveo" | "granveo";
+  mark: "insuveo" | "granveo" | "flutfast" | "kanbancast";
   href?: string;
   linkLabel?: string;
 };
+
+export const bookingUrl = "https://calendar.app.google/xmXnGT5w1P6AmDa87";
+export const resumeUrl = "/Sahil_Maheshwari_Resume.pdf";
 
 export type Experience = {
   company: string;
@@ -26,6 +29,29 @@ export const proofPoints = [
   { value: "100K+", label: "hours saved through research workflows" },
   { value: "500K+", label: "people served by a commerce product" },
   { value: "13%", label: "conversion lift through product experiments" }
+] as const;
+
+export const capabilities = [
+  {
+    number: "01",
+    title: "Find the right workflow",
+    body: "I map the current process, the people making decisions, the information they need, and the places where context gets lost."
+  },
+  {
+    number: "02",
+    title: "Build the AI system",
+    body: "I turn that map into agents, retrieval, memory, structured outputs, and integrations that fit the way the team already works."
+  },
+  {
+    number: "03",
+    title: "Make it reliable",
+    body: "I design evaluations, source visibility, human review, and recovery paths so the workflow can handle real inputs and honest uncertainty."
+  },
+  {
+    number: "04",
+    title: "Ship the product around it",
+    body: "I build the interface and production system with TypeScript, Next.js, Python, Postgres, and the infrastructure needed to keep improving it."
+  }
 ] as const;
 
 export const experiences: readonly Experience[] = [
@@ -115,6 +141,30 @@ export const projects: readonly Project[] = [
     mark: "granveo",
     href: "https://github.com/bluzeey/granveo-mcp",
     linkLabel: "Explore the public work"
+  },
+  {
+    title: "FlutFast",
+    eyebrow: "Commercial product · Mobile development",
+    description:
+      "A Flutter starter kit that removes repeated setup from the first weeks of a mobile product.",
+    detail:
+      "I turned the plumbing I kept rebuilding into a product with authentication, onboarding, payments, analytics, backend services, and AI integrations. FlutFast taught me how packaging and distribution shape the value of engineering work.",
+    tags: ["Flutter", "Developer tools", "Product engineering"],
+    mark: "flutfast",
+    href: "https://www.flutfast.com/",
+    linkLabel: "Visit FlutFast"
+  },
+  {
+    title: "KanbanCast",
+    eyebrow: "Commercial build · Project communication",
+    description:
+      "A project tool for turning the work on a Kanban board into updates people can share.",
+    detail:
+      "I worked across the web product, browser extension, embeddable components, and a Flutter package. The experiment asked whether project progress could become useful communication without making a team duplicate its work.",
+    tags: ["Workflow automation", "Product communication", "Cross platform"],
+    mark: "kanbancast",
+    href: "https://kanbancast.com/",
+    linkLabel: "Visit KanbanCast"
   }
 ] as const;
 
@@ -131,11 +181,21 @@ export const visions = [
   },
   {
     number: "03",
+    title: "AI will enter every useful workflow",
+    body: "As more work becomes digital, every document, decision, and handoff becomes a place where AI can assist. The real work is making those additions coherent."
+  },
+  {
+    number: "04",
     title: "Limits should be visible",
     body: "AI earns trust when people can see its evidence, its uncertainty, and the point where someone must make the call."
   },
   {
-    number: "04",
+    number: "05",
+    title: "Communication is part of engineering",
+    body: "A strong engineer can explain the problem, connect technical choices to the business, and help different people move toward the same result."
+  },
+  {
+    number: "06",
     title: "Learning should create agency",
     body: "The best knowledge tools leave people more capable than they were before using them. That is the future I want to spend time building."
   }

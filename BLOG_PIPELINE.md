@@ -22,8 +22,9 @@ The body should usually be 600 to 900 words. Use short paragraphs. Add headings 
 
 1. Start with Sahil's newest first hand notes, project entries, conversations, and changed opinions from the past few days.
 2. Look for the wider question behind a specific observation. Recurring themes include access to intelligence, information continuity, personal knowledge, human judgment, learning, and responsibility in AI products.
-3. Use Granveo and Insuveo as evidence when they help. The article should still make sense to a reader who has never heard of either project.
+3. Use Granveo, Insuveo, FlutFast, and KanbanCast as evidence when they help. The article should still make sense to a reader who has never heard of any of them.
 4. Draw on lessons from Pave, Silatus, CodeVyasa, Assembo, and Aqualogica only when the source supports the detail.
+5. Relevant themes may use natural search language such as AI developer, AI workflow development, AI agents, retrieval, agent memory, and workflow automation. Use the phrase that fits the thought. Never repeat a term merely to target a keyword.
 
 ## Editorial rules
 
@@ -41,6 +42,10 @@ The body should usually be 600 to 900 words. Use short paragraphs. Add headings 
 3. Avoid decorative bold text, dramatic fragments, forced groups of three, and one line endings that repeat the previous paragraph.
 4. Replace sales language and abstract AI phrases with the concrete detail that supports the claim.
 5. Read the draft aloud. Vary sentence length and keep Sahil's uncertainty where it is part of the thought.
+
+## Conversation prompt
+
+Every published article page includes a shared invitation to book a demo or email Sahil. Do not paste a repeated sales paragraph into the Markdown. Let the article reach its own honest conclusion and allow the site component to carry the invitation.
 
 ## Publishing behavior
 

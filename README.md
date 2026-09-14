@@ -1,6 +1,6 @@
 # Sahil Maheshwari portfolio
 
-A strict TypeScript Next.js portfolio for Sahil's work, experience, and essays.
+A strict TypeScript Next.js portfolio for Sahil's AI workflow work, experience, and essays.
 
 ## Local development
 
@@ -25,4 +25,4 @@ Add a Markdown file to `content/blog`. The complete schema, editorial constraint
 
 ## Design
 
-The visual source is [`DESIGN.md`](./DESIGN.md). It uses Inter, a near black canvas, three dark surface tones, restrained cobalt violet, and a buttercup accent. The portfolio adds a compact header, a five logo work history, personal project symbols, and Sahil's portrait.
+The visual source is [`DESIGN.md`](./DESIGN.md). It uses Inter, a near black canvas, three dark surface tones, restrained cobalt violet, and a buttercup accent. The portfolio includes a compact header, AI workflow services, a five logo work history, commercial projects, original project symbols, Sahil's portrait, and an article conversation prompt.

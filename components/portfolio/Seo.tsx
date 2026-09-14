@@ -5,18 +5,20 @@ type SeoProps = {
   description?: string;
   path?: string;
   type?: "website" | "article";
+  publishedTime?: string;
 };
 
 const siteUrl = "https://sahilmaheshwari.com";
-const defaultTitle = "Sahil Maheshwari | Product Engineer and Founder";
+const defaultTitle = "Sahil Maheshwari | AI Developer for Reliable AI Workflows";
 const defaultDescription =
-  "Sahil Maheshwari builds tools that help people learn, preserve context, and make difficult decisions with more clarity.";
+  "AI developer Sahil Maheshwari designs and ships reliable AI workflows, agents, retrieval systems, and full stack products for teams with complex work.";
 
 export function Seo({
   title = defaultTitle,
   description = defaultDescription,
   path = "",
-  type = "website"
+  type = "website",
+  publishedTime
 }: SeoProps) {
   const canonical = `${siteUrl}${path}`;
 
@@ -37,8 +39,13 @@ export function Seo({
       <meta property="og:image:alt" content="Portrait of Sahil Maheshwari" />
       <meta property="og:image:width" content="460" />
       <meta property="og:image:height" content="460" />
+      {publishedTime ? <meta property="article:published_time" content={publishedTime} /> : null}
+      {type === "article" ? <meta property="article:author" content={`${siteUrl}/#sahil`} /> : null}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@TalkinIdeas" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={`${siteUrl}/images/profile/sahil-maheshwari.jpg`} />
     </Head>
   );
 }

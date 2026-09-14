@@ -1,7 +1,9 @@
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
+import { ArrowUpRight } from "@/components/portfolio/Icons";
 import { PageShell } from "@/components/portfolio/PageShell";
 import { PostCard } from "@/components/portfolio/PostCard";
 import { Seo } from "@/components/portfolio/Seo";
+import { bookingUrl } from "@/data/site";
 import { getAllPosts, type PostMeta } from "@/lib/posts";
 
 type BlogProps = { posts: PostMeta[] };
@@ -14,15 +16,18 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
   return (
     <PageShell>
       <Seo
-        title="Writing | Sahil Maheshwari"
-        description="Essays from Sahil Maheshwari about useful AI, human judgment, connected knowledge, and the future he wants to help build."
+        title="AI Workflow Essays | Sahil Maheshwari"
+        description="Essays from AI developer Sahil Maheshwari about AI workflows, software, human judgment, connected knowledge, and staying useful as engineering changes."
         path="/blog"
       />
       <section className="page-hero">
         <div className="shell narrow-shell">
           <p className="eyebrow"><span className="status-dot" /> Writing from the work</p>
-          <h1>Essays on the future I want to help build.</h1>
-          <p>Thoughts on useful AI, connected knowledge, human judgment, and what I learn while turning those ideas into products.</p>
+          <h1>Essays on AI workflows and the future of software.</h1>
+          <p className="page-hero-intro">Thoughts on useful AI, connected knowledge, human judgment, and what engineers need as the work changes.</p>
+          <div className="page-hero-actions">
+            <a className="text-link" href={bookingUrl} rel="noreferrer" target="_blank">Book a demo <ArrowUpRight /></a>
+          </div>
         </div>
       </section>
       <section className="section blog-index-section">

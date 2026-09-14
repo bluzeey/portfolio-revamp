@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { socials } from "@/data/site";
+import { bookingUrl, resumeUrl, socials } from "@/data/site";
 import { ArrowUpRight } from "./Icons";
 
 export function SiteFooter() {
@@ -10,7 +10,7 @@ export function SiteFooter() {
           <Link className="wordmark" href="/">
             <span className="wordmark-name">Sahil Maheshwari</span>
           </Link>
-          <p className="footer-note">Building tools for clearer thought and better decisions.</p>
+          <p className="footer-note">Building reliable AI workflows for complex work.</p>
         </div>
 
         <div className="footer-links">
@@ -19,6 +19,8 @@ export function SiteFooter() {
               {item.label}<ArrowUpRight size={14} />
             </a>
           ))}
+          <a href={resumeUrl} target="_blank" rel="noreferrer">Resume<ArrowUpRight size={14} /></a>
+          <a href={bookingUrl} target="_blank" rel="noreferrer">Book a demo<ArrowUpRight size={14} /></a>
         </div>
       </div>
       <div className="shell footer-base">

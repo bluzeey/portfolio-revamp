@@ -70,3 +70,23 @@ export function GranveoMark({ size = 48, className }: IconProps) {
     </svg>
   );
 }
+
+export function FlutFastMark({ size = 48, className }: IconProps) {
+  return (
+    <svg {...shared(size, className)} viewBox="0 0 48 48">
+      <rect x="1" y="1" width="46" height="46" rx="7" fill="#242424" stroke="rgba(255,255,255,0.14)" />
+      <path d="M28.5 8.5 15 25h8l-3.5 14.5L33 21h-8l3.5-12.5Z" fill="#A78BFA" stroke="#FCD34D" strokeWidth="1.3" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function KanbanCastMark({ size = 48, className }: IconProps) {
+  return (
+    <svg {...shared(size, className)} viewBox="0 0 48 48">
+      <rect x="1" y="1" width="46" height="46" rx="7" fill="#242424" stroke="rgba(255,255,255,0.14)" />
+      <rect x="11" y="13" width="8" height="22" rx="2" fill="#6B16ED" fillOpacity=".34" stroke="#A78BFA" strokeWidth="1.3" />
+      <rect x="22" y="13" width="8" height="15" rx="2" fill="#6B16ED" fillOpacity=".34" stroke="#A78BFA" strokeWidth="1.3" />
+      <path d="M34 19.5c2 1.1 3 2.6 3 4.5s-1 3.4-3 4.5M36.5 15.5c3.8 2.1 5.7 4.9 5.7 8.5s-1.9 6.4-5.7 8.5" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}

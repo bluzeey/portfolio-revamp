@@ -1,12 +1,24 @@
 import type { Project } from "@/data/site";
-import { ArrowUpRight, GranveoMark, InsuveoMark } from "./Icons";
+import {
+  ArrowUpRight,
+  FlutFastMark,
+  GranveoMark,
+  InsuveoMark,
+  KanbanCastMark
+} from "./Icons";
 
 type ProjectCardProps = {
   project: Project;
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const Mark = project.mark === "insuveo" ? InsuveoMark : GranveoMark;
+  const marks = {
+    insuveo: InsuveoMark,
+    granveo: GranveoMark,
+    flutfast: FlutFastMark,
+    kanbancast: KanbanCastMark
+  } as const;
+  const Mark = marks[project.mark];
   const content = (
     <>
       <div className="project-card-topline">
