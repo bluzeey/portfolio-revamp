@@ -1,52 +1,55 @@
 ---
-title: "AI memory needs a job to do"
+title: "A better tool remembers how you got there"
 date: "2026-08-17"
-excerpt: "A general memory layer sounds powerful, but durable value appears only when memory improves a specific decision or workflow."
+excerpt: "Useful memory preserves the sources and changes that shaped a decision, so the next person can pick up the thread."
 tags:
+  - Personal knowledge
   - Agent memory
-  - Granveo
-  - Product strategy
+  - Product thinking
 featured: false
 ---
 
-When I started exploring Granveo, the broad idea felt compelling: knowledge is scattered across documents, notes, chats and tabs, while human thinking is connected. A visual memory layer could reconnect it.
+I started Granveo because my information was easy to store and difficult to carry forward.
 
-The technical possibilities quickly became interesting. Semantic retrieval. Knowledge graphs. Provenance. Temporal validity. An agent deciding what context to load before taking an action.
+Notes lived in one app. Documents lived somewhere else. Useful conversations disappeared into long histories. I could search for a phrase, but search rarely recovered the reason I had saved it or the project that gave it meaning.
 
-But a broad possibility is not yet a product.
+This problem became more noticeable as I worked across several projects. An idea from a research tool could matter to a knowledge system months later. A conversation about insurance could change how I thought about agent memory. The connection existed in my head and nowhere else.
 
-One piece of feedback stayed with me: general memory may become a capability inside the major AI platforms. If the value is simply “the agent remembers more,” the platform is in a strong position to absorb it.
+I wanted a tool that could preserve more of the path.
 
-That pushed me toward a harder question: **what job becomes meaningfully better because this memory exists?**
+## A saved fact has a history
 
-## Retrieval is not the outcome
+Most software treats memory as a collection of items. A note has text, a title, and a date. A document has a name and a folder. Those fields are useful, but they say little about how the information affected a decision.
 
-Finding a relevant passage feels useful, but it is only an intermediate step. The user is usually trying to make a decision, produce an analysis, teach a concept, plan a project or understand what changed.
+Suppose I save an article about a market. A few weeks later, a customer conversation contradicts one of its claims. I change the product plan. Months after that, I find the original article again.
 
-The memory system matters when it changes the quality or cost of that outcome.
+A useful memory should show that sequence. The old source still matters because it explains the earlier decision. The later conversation matters because it changed my view. Showing only the latest note removes the path that made the conclusion understandable.
 
-For a researcher, useful memory might preserve which claim came from which source and whether newer evidence has superseded it. For a team, it might recover why a decision was made—not just the final document. For a learner, it might maintain a compact, auditable picture of what they understand and route the next explanation accordingly.
+This is why I became interested in graphs, source history, and time inside Granveo. The graph can represent relationships across ideas. The source history can show where a claim began. Time helps the system avoid presenting an old assumption as a current fact.
 
-These are different products even if they share graph and retrieval infrastructure.
+## Retrieval should serve the present task
 
-## Memory also needs rules for forgetting
+Remembering more can make a system worse. An agent with access to every old note may load irrelevant context or repeat a belief that the user has already rejected. A long memory can sound convincing while using the wrong evidence.
 
-“Remember everything” creates its own problems. Old assumptions remain searchable. Temporary preferences become permanent facts. A confident summary can detach from the evidence that produced it.
+The system has to choose what belongs in the current task. That choice depends on what the user is trying to do.
 
-A durable memory system needs more than storage:
+A product decision may need the latest customer evidence and the reason the previous plan changed. A research question may need competing sources and their publication dates. A personal learning tool may need the concepts that remain confusing.
 
-- provenance, so a fact can be traced;
-- validity, so time-sensitive context can expire;
-- selective retrieval, so every task is not flooded with history;
-- constraints, so the agent knows what it may infer;
-- evaluation, so better memory is connected to a measurable result.
+Each case asks the memory to do different work. I no longer think of memory as a single feature that can sit underneath every product unchanged. The storage may be shared, but the retrieval rules have to reflect the decision in front of the user.
 
-Without those pieces, memory can make an agent more persuasive without making it more correct.
+## Forgetting is part of memory
 
-## The product lesson
+Some information should expire. A temporary preference should stay temporary. An early estimate should not keep appearing after the team replaces it with measured data. A private note may belong to one context and no other.
 
-I still believe connected context will be important. I am less convinced that “memory” should be the headline.
+This makes forgetting an active design choice. The system needs rules for validity, access, and relevance. It should also let the user see why a piece of context appeared.
 
-The stronger path is to choose a workflow where context loss is expensive, build the memory around its decisions, and measure whether the work improves. The graph becomes infrastructure. The user pays for the job it makes possible.
+I find this more interesting than the promise that an agent will remember everything. Human memory is selective, and useful software memory probably needs to be selective too. The challenge is making that selection understandable enough to inspect and correct.
 
-This feels like a useful correction beyond Granveo. A technology can be foundational and still need a narrow doorway into the market.
+## Institutions need memory as well
+
+The Granveo idea began with my own notes, but the same problem appears in teams. People leave projects. Decisions move across departments. A file reaches someone who can see the outcome and none of the reasoning.
+
+My insurance research has shown how expensive this can become. Information collected during placement may matter again during a claim. If the source and the explanation disappear, the next person has to reconstruct the history under pressure.
+
+I want to keep exploring products that preserve this kind of continuity. The goal is a useful record of how the work arrived at its current state. When the next question appears, the person opening the tool should have enough of the path to continue with confidence.
+

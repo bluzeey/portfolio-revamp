@@ -1,11 +1,13 @@
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, MailIcon, SparkIcon } from "@/components/portfolio/Icons";
+import { ExperienceGrid } from "@/components/portfolio/ExperienceGrid";
+import { ArrowUpRight, MailIcon } from "@/components/portfolio/Icons";
 import { PageShell } from "@/components/portfolio/PageShell";
 import { PostCard } from "@/components/portfolio/PostCard";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
 import { Seo } from "@/components/portfolio/Seo";
-import { principles, projects, proofPoints } from "@/data/site";
+import { experiences, projects, proofPoints, visions } from "@/data/site";
 import { getAllPosts, type PostMeta } from "@/lib/posts";
 
 type HomeProps = {
@@ -21,6 +23,7 @@ export default function Home({ latestPosts }: InferGetStaticPropsType<typeof get
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Sahil Maheshwari",
+    image: "https://sahilmaheshwari.com/images/profile/sahil-maheshwari.jpg",
     url: "https://sahilmaheshwari.com",
     jobTitle: "Product Engineer and Founder",
     address: { "@type": "PostalAddress", addressLocality: "Bangalore", addressCountry: "IN" },
@@ -39,36 +42,37 @@ export default function Home({ latestPosts }: InferGetStaticPropsType<typeof get
       <section className="hero-section">
         <div className="shell hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow"><span className="status-dot" /> Bangalore · Building and learning in public</p>
-            <h1>I build products that turn messy information into <span>useful decisions.</span></h1>
+            <p className="eyebrow"><span className="status-dot" /> Bangalore · Product engineer and founder</p>
+            <h1>I build tools that help people think with <span>more context.</span></h1>
             <p className="hero-intro">
-              I’m Sahil—a product-focused engineer and founder working across AI, knowledge systems and commercial insurance. I like problems where the hard part is understanding the workflow before writing the software.
+              I am Sahil, a self taught product engineer and founder. I work on applied AI, personal knowledge systems, and insurance operations. I care about what happens after an answer appears: whether someone can understand it and use it to make a better decision.
             </p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#work">Explore selected work <ArrowUpRight /></a>
-              <Link className="button button-accent" href="/blog">Read what I’m learning</Link>
+              <a className="button button-primary" href="#work">See what I am building <ArrowUpRight /></a>
+              <Link className="button button-accent" href="/blog">Read the essays</Link>
             </div>
           </div>
 
-          <aside className="current-card" aria-label="What Sahil is working on now">
-            <div className="current-card-header">
-              <span>Current threads</span>
-              <SparkIcon className="accent-icon" />
+          <aside className="profile-card" aria-label="About Sahil Maheshwari">
+            <div className="profile-image-wrap">
+              <Image
+                alt="Sahil Maheshwari"
+                className="profile-image"
+                height={460}
+                priority
+                sizes="(max-width: 960px) 70vw, 360px"
+                src="/images/profile/sahil-maheshwari.jpg"
+                width={460}
+              />
             </div>
-            <div className="thread-map" aria-hidden="true">
-              <span className="map-node map-node-main">Sahil</span>
-              <span className="map-line map-line-one" />
-              <span className="map-line map-line-two" />
-              <span className="map-line map-line-three" />
-              <span className="map-node map-node-one">Insurance</span>
-              <span className="map-node map-node-two">Context</span>
-              <span className="map-node map-node-three">Agents</span>
+            <div className="profile-card-copy">
+              <p className="profile-label"><span className="status-dot" /> Current question</p>
+              <p>How can software preserve the context around a decision while leaving the final judgment with the person responsible?</p>
+              <div className="profile-links">
+                <a href="https://www.linkedin.com/in/sahil-maheshwari/" rel="noreferrer" target="_blank">LinkedIn <ArrowUpRight size={14} /></a>
+                <a href="https://github.com/bluzeey" rel="noreferrer" target="_blank">GitHub <ArrowUpRight size={14} /></a>
+              </div>
             </div>
-            <ol className="current-list">
-              <li><span>01</span><div><strong>Insuveo</strong><p>Finding where context breaks across commercial insurance workflows.</p></div></li>
-              <li><span>02</span><div><strong>Granveo</strong><p>Exploring durable memory and connected knowledge for AI systems.</p></div></li>
-              <li><span>03</span><div><strong>Field notes</strong><p>Turning conversations, prototypes and contradictions into useful writing.</p></div></li>
-            </ol>
           </aside>
         </div>
       </section>
@@ -84,49 +88,62 @@ export default function Home({ latestPosts }: InferGetStaticPropsType<typeof get
         </div>
       </section>
 
-      <section className="section" id="work">
+      <section className="section" id="experience">
+        <div className="shell">
+          <div className="section-heading-grid">
+            <p className="section-kicker">Experience</p>
+            <div>
+              <h2>Four roles and one product that shaped how I build.</h2>
+              <p>I learned to stay close to the user, ship in small pieces, and measure whether the work made anything better.</p>
+            </div>
+          </div>
+          <ExperienceGrid experiences={experiences} />
+        </div>
+      </section>
+
+      <section className="section section-surface" id="work">
         <div className="shell">
           <div className="section-heading-grid">
             <p className="section-kicker">Selected work</p>
             <div>
-              <h2>Products, systems and experiments with a reason to exist.</h2>
-              <p>I work from the underlying decision or bottleneck—not from a technology looking for somewhere to land.</p>
+              <h2>Two ideas I keep returning to.</h2>
+              <p>Granveo began with personal knowledge. Insuveo began with insurance operations. Both ask how useful context can survive a complicated process.</p>
             </div>
           </div>
           <div className="projects-grid">
-            {projects.map((project, index) => <ProjectCard key={project.title} project={project} index={index} />)}
+            {projects.map((project) => <ProjectCard key={project.title} project={project} />)}
           </div>
         </div>
       </section>
 
-      <section className="section section-surface" id="approach">
+      <section className="section" id="vision">
         <div className="shell">
           <div className="section-heading-grid">
-            <p className="section-kicker">How I work</p>
+            <p className="section-kicker">Direction</p>
             <div>
-              <h2>Curious about the system. Practical about the next step.</h2>
-              <p>The pattern across my work is simple: get close to reality, make the uncertainty explicit, and build a loop that can teach us something.</p>
+              <h2>What I want software to make easier.</h2>
+              <p>The projects change. These questions have stayed with me and shape what I choose to build next.</p>
             </div>
           </div>
-          <div className="principles-grid">
-            {principles.map((principle) => (
-              <article className="principle" key={principle.number}>
-                <span>{principle.number}</span>
-                <h3>{principle.title}</h3>
-                <p>{principle.body}</p>
+          <div className="vision-grid">
+            {visions.map((vision) => (
+              <article className="vision-card" key={vision.number}>
+                <span>{vision.number}</span>
+                <h3>{vision.title}</h3>
+                <p>{vision.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section" id="writing">
+      <section className="section section-surface" id="writing">
         <div className="shell">
           <div className="section-heading-grid writing-heading">
-            <p className="section-kicker">Working notes</p>
+            <p className="section-kicker">Writing</p>
             <div>
-              <h2>What I’m noticing while I build.</h2>
-              <p>Short essays from product discovery, engineering, insurance conversations and the uncomfortable parts of choosing what to build.</p>
+              <h2>Essays about the direction behind the work.</h2>
+              <p>I write about useful AI, human judgment, connected knowledge, and the choices that become clearer while building.</p>
               <Link className="text-link" href="/blog">Browse all writing <ArrowUpRight /></Link>
             </div>
           </div>
@@ -140,12 +157,12 @@ export default function Home({ latestPosts }: InferGetStaticPropsType<typeof get
         <div className="shell about-grid">
           <div>
             <p className="section-kicker">A little context</p>
-            <h2>Engineer by craft. Founder by temperament. Researcher when the map is missing.</h2>
+            <h2>Engineer by craft. Founder because I like unfinished maps.</h2>
           </div>
           <div className="about-copy">
-            <p>I’ve spent more than four years building in early-stage teams across AI, commerce and healthcare. I’m happiest where product judgment and engineering meet: shaping the problem, shipping the first version, and staying close enough to users to change my mind.</p>
-            <p>Right now I’m studying how information moves through Indian commercial insurance while continuing to explore agent memory, research tools and better interfaces for complex knowledge.</p>
-            <div className="availability"><span className="status-dot" /><span>Open to thoughtful conversations with builders, operators and domain experts.</span></div>
+            <p>I started building with early stage teams in 2021. Since then, I have worked across commerce, research software, learning products, and applied AI. I am happiest when product judgment and engineering happen in the same room.</p>
+            <p>Right now I am studying how information moves through Indian commercial insurance. I am also thinking about personal knowledge, responsible agents, and tools that make hard subjects easier to understand.</p>
+            <div className="availability"><span className="status-dot" /><span>Open to conversations with builders, operators, and people who know a difficult domain well.</span></div>
           </div>
         </div>
       </section>
@@ -153,9 +170,9 @@ export default function Home({ latestPosts }: InferGetStaticPropsType<typeof get
       <section className="contact-section">
         <div className="shell contact-inner">
           <div>
-            <p className="section-kicker">Let’s compare notes</p>
-            <h2>Working on a difficult information workflow?</h2>
-            <p>I’d enjoy hearing where the current process breaks—and what people do to keep it moving anyway.</p>
+            <p className="section-kicker">Compare notes</p>
+            <h2>Have a difficult workflow or a useful disagreement?</h2>
+            <p>I would like to hear how the work happens today and where the current tools lose the thread.</p>
           </div>
           <a className="button button-light" href="mailto:sahilm1711@gmail.com"><MailIcon /> Email Sahil</a>
         </div>

@@ -1,6 +1,6 @@
 # Daily blog pipeline
 
-This repository publishes Sahil Maheshwari's working notes from Markdown files in `content/blog`.
+This repository publishes Sahil Maheshwari's essays from Markdown files in `content/blog`.
 
 ## Content contract
 
@@ -10,34 +10,38 @@ Create one file named `YYYY-MM-DD-short-kebab-slug.md` with this frontmatter:
 ---
 title: "A specific, human title"
 date: "YYYY-MM-DD"
-excerpt: "One sentence that names the observation and why it matters."
-tags:
-  - Primary topic
-  - Secondary topic
+excerpt: "One sentence that names the idea and why Sahil cares about it."
+tags: ["Primary topic", "Secondary topic"]
 featured: false
 ---
 ```
 
-The body should normally be 500–900 words. Use Markdown headings, short paragraphs and lists only when they make the idea clearer.
+The body should usually be 600 to 900 words. Use short paragraphs. Add headings only when the thought changes direction.
 
 ## Source order
 
-1. Sahil's newest first-hand project conversations and notes from the last 24–72 hours.
-2. Current work on Insuveo and Indian commercial-insurance workflows.
-3. Product and engineering lessons from Granveo, research agents and knowledge systems.
-4. Founder lessons that are grounded in a concrete event, experiment or changed belief.
+1. Start with Sahil's newest first hand notes, project entries, conversations, and changed opinions from the past few days.
+2. Look for the wider question behind a specific observation. Recurring themes include access to intelligence, information continuity, personal knowledge, human judgment, learning, and responsibility in AI products.
+3. Use Granveo and Insuveo as evidence when they help. The article should still make sense to a reader who has never heard of either project.
+4. Draw on lessons from Pave, Silatus, CodeVyasa, Assembo, and Aqualogica only when the source supports the detail.
 
 ## Editorial rules
 
-- Preserve facts, names, dates and metrics exactly. Never invent a meeting, quote, result or product capability.
-- Write in Sahil's first-person voice: direct, curious and willing to name uncertainty.
-- Prefer one useful observation over a broad trend summary.
-- Separate what someone said, what Sahil observed and what Sahil now infers.
-- Do not expose private correspondence, contact details or sensitive personal material.
-- Do not turn discovery notes into sales copy. Avoid stock AI language, inflated claims and generic introductions.
-- Do not repeat the central argument of an existing post. Read the latest posts before selecting a topic.
-- Keep unfinished work honest: use “exploring,” “testing” or “building” when that is the real state.
+1. Preserve every fact, name, date, and metric. Never invent a meeting, quote, result, or product capability.
+2. Write in Sahil's first person voice. He is curious, direct, and willing to leave a question unresolved.
+3. Choose one broad idea and develop it through a concrete experience. Do not turn private notes into a diary entry or a project update.
+4. Separate observation from inference. Keep unfinished work honest with words such as "exploring," "testing," or "building" when they describe the current state.
+5. Do not expose private correspondence, contact details, or sensitive personal material.
+6. Read the existing posts before choosing a topic. Do not repeat their central argument.
+
+## Human writing check
+
+1. State the point directly. Remove staged openings and the repeated "not X but Y" formula.
+2. Do not use em dashes, en dashes, or double hyphens as punctuation. Use a period, comma, colon, or a rewritten sentence.
+3. Avoid decorative bold text, dramatic fragments, forced groups of three, and one line endings that repeat the previous paragraph.
+4. Replace sales language and abstract AI phrases with the concrete detail that supports the claim.
+5. Read the draft aloud. Vary sentence length and keep Sahil's uncertainty where it is part of the thought.
 
 ## Publishing behavior
 
-The daily ChatGPT automation reads current project context, checks this contract and recent posts, then creates exactly one new Markdown file. A repository check validates TypeScript, linting and the production build for every proposed change.
+The daily automation reads current project context, this contract, and recent posts. It creates one Markdown file. Repository checks then validate the copy rule, TypeScript, linting, and the production build.

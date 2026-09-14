@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "copycheck": "node scripts/checkCopy.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "check": "npm run typecheck && npm run lint && npm run build"
+    "check": "npm run copycheck && npm run typecheck && npm run lint && npm run build"
   },
   "engines": {
     "node": ">=20.9.0"

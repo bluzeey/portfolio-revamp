@@ -1,61 +1,55 @@
 ---
-title: "Claims is not one workflow"
+title: "Human judgment belongs in the product"
 date: "2026-09-09"
-excerpt: "Calling claims a single automation opportunity hides the important question: which part needs speed, which part needs evidence, and which part still needs judgment?"
+excerpt: "AI can prepare evidence and reduce coordination while the accountable person keeps a clear place to decide."
 tags:
-  - Claims
-  - Workflow design
-  - Product strategy
+  - Human judgment
+  - Applied AI
+  - Product design
 featured: false
 ---
 
-“Claims” sounds like a workflow. It is closer to a collection of workflows that share a consequence: money is going out, and every mistake is visible.
+An AI product demo often ends when the model produces a plausible answer. In working systems, that answer usually creates another decision. Someone must check the evidence, decide whether the result applies, and accept responsibility for what happens next.
 
-That changes how teams think about automation.
+I have been thinking about this while studying commercial insurance. The field makes responsibility easy to see because decisions have financial and legal consequences. It has also helped me notice the same pattern in research software and knowledge tools.
 
-In a revenue workflow, a faster response often looks obviously good. In claims, speed can reduce operating cost and improve the customer experience, but it can also create new risk if the system moves before the evidence is clear.
+The useful product includes judgment in its design.
 
-The useful question is not whether claims can be automated. It is **which part of the claim is actually causing avoidable work**.
+## Automation changes the work around a decision
 
-## Break the label apart
+Many tasks around a decision can become faster. A system can collect documents, extract figures, compare versions, or draft a summary. Each of those steps can reduce repetitive work.
 
-A claim can include:
+The effect is larger than time saved. Automation changes what the reviewer sees and the order in which they see it. A summary may push one detail to the top and leave another in a footnote. A confidence score may feel authoritative even when the underlying information is incomplete. A smooth interface can make an uncertain result look settled.
 
-- first notice and intake;
-- document and image collection;
-- policy and coverage checks;
-- triage and assignment;
-- investigation or loss assessment;
-- communication across the insured, broker, insurer, surveyor and counsel;
-- approval, settlement and recovery;
-- complaints and later review.
+Product design shapes judgment before the user clicks approve.
 
-These steps do not have the same tolerance for error. They do not require the same kind of intelligence either.
+This means the team building the product has to understand the decision, including who owns it and what evidence they need. Model quality is part of the work. The surrounding interface carries just as much responsibility.
 
-Collecting a missing document is a coordination problem. Interpreting whether a liability allegation falls within coverage is a judgment problem. A single “claims copilot” pitch blurs that distinction.
+## The boundary should be visible
 
-## Coordination can be valuable without pretending to decide
+I prefer interfaces that show their limits in ordinary language. A person should be able to tell which information came directly from a source, which part the system inferred, and what remains unknown.
 
-Some of the strongest near-term opportunities look almost ordinary:
+This matters in an insurance claim. A system may identify the relevant policy clause and collect the documents needed for review. Coverage interpretation still depends on the facts, wording, and authority of the person making the decision. Hiding that boundary would make the product easier to demo and harder to trust.
 
-- make the current status visible;
-- ask for the right evidence at the right time;
-- show which information is still unverified;
-- keep communication attached to the relevant decision;
-- summarize a long file without removing the source trail.
+The same principle applies in research. A generated report should keep its sources close to its claims. When the evidence conflicts, the conflict should remain visible. The reader can then make a judgment with a clearer view of the material.
 
-None of these features settles the claim. Together, they can reduce the dilution that happens as information passes through people and systems.
+Uncertainty needs a designed state. It should have a place on the screen, an owner, and a next action.
 
-That matters because delay has a cost. Repeated follow-ups consume operating time. Customers become anxious when they cannot see progress. External experts become more expensive when the file is unclear. A good coordination layer can improve all three without making a coverage decision on its own.
+## Approval should have a scope
 
-## The boundary is the product
+A single approved status can hide several open questions. Someone may approve a plan while leaving one figure unverified. They may accept a draft for discussion without accepting its conclusion.
 
-The temptation in AI product design is to present the model as the expert. In a consequential workflow, I think the better product makes its boundary legible.
+I learned this while looking at claims handoffs and while building the current Insuveo prototype. The product asks the user to review an agent plan before the run begins. That approval applies to a specific plan. It does not give the agent broad permission to contact people or make insurance decisions.
 
-It should be clear what the system extracted, what it inferred, what source supports the inference, and where a human must decide.
+This small distinction improves the mental model. The person knows what they have approved, and the system has a clear boundary for its next action.
 
-That is not a limitation to hide. It is part of the interface.
+Approval records should preserve the same context. A later reviewer needs to know what was accepted, which conditions remained, and which source informed the choice. Otherwise a green status can create more confusion than it removes.
 
-The more I learn about claims, the more I think the first useful product will be specific. Not “automate claims,” but something like: reduce the time between receiving a file and knowing exactly what is missing, who owns the next action, and which evidence supports the current view.
+## Judgment can become easier without disappearing
 
-Specificity makes the product less dramatic. It also makes it possible to test.
+I am interested in AI because it can help people handle more information than they could manage alone. That can expand access to expertise and reduce the time spent assembling a file.
+
+The person responsible for a decision still needs room to think. Good software prepares that room. It brings forward the relevant evidence, keeps uncertainty visible, and records what the person decided. The workflow becomes easier to follow while accountability remains clear.
+
+That is the product standard I am carrying into Insuveo and my other work with applied AI. I want the system to do substantial preparation and give the final judgment a clear, honest place.
+

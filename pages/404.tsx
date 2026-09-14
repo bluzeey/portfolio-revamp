@@ -6,7 +6,7 @@ import { Seo } from "@/components/portfolio/Seo";
 export default function NotFound() {
   return (
     <PageShell>
-      <Seo title="Page not found — Sahil Maheshwari" path="/404" />
+      <Seo title="Page not found | Sahil Maheshwari" path="/404" />
       <section className="not-found shell narrow-shell">
         <span className="not-found-code">404</span>
         <h1>This thread ends here.</h1>

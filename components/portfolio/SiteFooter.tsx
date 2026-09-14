@@ -8,10 +8,9 @@ export function SiteFooter() {
       <div className="shell footer-inner">
         <div>
           <Link className="wordmark" href="/">
-            <span className="wordmark-mark" aria-hidden="true">SM</span>
             <span className="wordmark-name">Sahil Maheshwari</span>
           </Link>
-          <p className="footer-note">Building useful systems from messy information.</p>
+          <p className="footer-note">Building tools for clearer thought and better decisions.</p>
         </div>
 
         <div className="footer-links">

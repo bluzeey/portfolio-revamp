@@ -1,19 +1,19 @@
 import type { Project } from "@/data/site";
-import { ArrowUpRight } from "./Icons";
+import { ArrowUpRight, GranveoMark, InsuveoMark } from "./Icons";
 
 type ProjectCardProps = {
   project: Project;
-  index: number;
 };
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
+  const Mark = project.mark === "insuveo" ? InsuveoMark : GranveoMark;
   const content = (
     <>
       <div className="project-card-topline">
-        <span>{String(index + 1).padStart(2, "0")}</span>
-        <span className="project-eyebrow">{project.eyebrow}</span>
+        <Mark className="project-mark" />
         {project.href ? <ArrowUpRight /> : null}
       </div>
+      <p className="project-eyebrow">{project.eyebrow}</p>
       <h3>{project.title}</h3>
       <p className="project-lead">{project.description}</p>
       <p className="project-detail">{project.detail}</p>
@@ -24,7 +24,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     </>
   );
 
-  const className = `project-card${project.featured ? " project-card-featured" : ""}`;
+  const className = "project-card project-card-featured";
 
   if (project.href) {
     return (

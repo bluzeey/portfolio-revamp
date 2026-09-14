@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) 
 export default function PostPage({ post }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <PageShell>
-      <Seo title={`${post.title} — Sahil Maheshwari`} description={post.excerpt} path={`/blog/${post.slug}`} type="article" />
+      <Seo title={`${post.title} | Sahil Maheshwari`} description={post.excerpt} path={`/blog/${post.slug}`} type="article" />
       <article className="article-shell">
         <header className="article-header shell narrow-shell">
           <Link className="back-link" href="/blog"><ArrowLeft /> All writing</Link>

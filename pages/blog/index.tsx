@@ -14,15 +14,15 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
   return (
     <PageShell>
       <Seo
-        title="Working Notes — Sahil Maheshwari"
-        description="Notes from Sahil Maheshwari on AI products, insurance workflows, knowledge systems and building through uncertainty."
+        title="Writing | Sahil Maheshwari"
+        description="Essays from Sahil Maheshwari about useful AI, human judgment, connected knowledge, and the future he wants to help build."
         path="/blog"
       />
       <section className="page-hero">
         <div className="shell narrow-shell">
           <p className="eyebrow"><span className="status-dot" /> Writing from the work</p>
-          <h1>Working notes, not polished certainty.</h1>
-          <p>Ideas from customer conversations, prototypes, engineering decisions and the questions that survive them.</p>
+          <h1>Essays on the future I want to help build.</h1>
+          <p>Thoughts on useful AI, connected knowledge, human judgment, and what I learn while turning those ideas into products.</p>
         </div>
       </section>
       <section className="section blog-index-section">

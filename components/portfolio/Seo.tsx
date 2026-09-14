@@ -8,9 +8,9 @@ type SeoProps = {
 };
 
 const siteUrl = "https://sahilmaheshwari.com";
-const defaultTitle = "Sahil Maheshwari — Product Engineer & Founder";
+const defaultTitle = "Sahil Maheshwari | Product Engineer and Founder";
 const defaultDescription =
-  "Sahil Maheshwari builds AI products and information workflows across research, knowledge systems and commercial insurance.";
+  "Sahil Maheshwari builds tools that help people learn, preserve context, and make difficult decisions with more clarity.";
 
 export function Seo({
   title = defaultTitle,
@@ -33,7 +33,11 @@ export function Seo({
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonical} />
       <meta property="og:site_name" content="Sahil Maheshwari" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content={`${siteUrl}/images/profile/sahil-maheshwari.jpg`} />
+      <meta property="og:image:alt" content="Portrait of Sahil Maheshwari" />
+      <meta property="og:image:width" content="460" />
+      <meta property="og:image:height" content="460" />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@TalkinIdeas" />
     </Head>
   );
